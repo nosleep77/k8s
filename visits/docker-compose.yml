@@ -1,0 +1,12 @@
+version: '3'
+services:
+  redis-server:
+    build:
+      context: ./
+      dockerfile: redis.docker
+    container_name: redis 
+  node-app:
+    restart: on-failure
+    build: .
+    ports:
+      - "4001:8081"
