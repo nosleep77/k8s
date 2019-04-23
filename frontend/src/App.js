@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-        	daba keri boto kun
+        	daba keri boto kun kun!
               </a>
         </header>
       </div>
