@@ -17,8 +17,8 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Zozo maka bari alskdjfalsfkjdasdf
-          </a>
+        	daba keri boto kun
+              </a>
         </header>
       </div>
     );
