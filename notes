@@ -47,3 +47,8 @@ kubectl scale --current-replicas=2 --replicas=1 deploy/myautoscale
 
 kubectl scale --replicas=12 deploy/myautoscale
 
+
+refresh container image imperatively thru command
+kubectl set image deployment/<name of deployment> <name of container>=<container image name with tag> 
+kubectl set image deployment/nginxDeployment webserver=nginx:1.3.1
+
