@@ -55,3 +55,10 @@ kubectl set image deployment/nginxDeployment webserver=nginx:1.3.1
 
 livenessProbe
 readynessProbe
+
+configMaps
+create configmap from config file
+kubectl create configmap <name of configmap> --from-file=<name of config file>
+kubectl create configmap nginx-config --from-file=nginx.conf
+
+
