@@ -62,3 +62,9 @@ kubectl create configmap <name of configmap> --from-file=<name of config file>
 kubectl create configmap nginx-config --from-file=nginx.conf
 
 
+Udemy k8s course
+https://github.com/wardviaene/kubernetes-course
+
+Richard Chesterwood
+https://github.com/DickChesterwood/k8s-fleetman
+
