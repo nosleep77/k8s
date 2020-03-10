@@ -2,6 +2,7 @@
 
 CHEAT SHEET
 https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+https://linuxacademy.com/site-content/uploads/2019/04/Kubernetes-Cheat-Sheet_07182019.pdf
 
 kubectl get all
 (Section 5): list all objects that you’ve created. Pods at first, later,
