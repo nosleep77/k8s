@@ -13,3 +13,6 @@ I also like the --export, because it removes a bunch of stuff from the existing 
 "kubectl get deployment -n default nginx -o yaml --export"
 
 "kubectl get deployment -n default nginx -o yaml --export > nginx-deployment.yaml"
+
+
+
