@@ -1,0 +1,15 @@
+
+Generate YAML file from kubectl
+https://www.reddit.com/r/kubernetes/comments/eu97sn/yaml_generator/
+
+deployment: "kubectl create deployment nginx --image=nginx --dry-run -o yaml"
+service: "kubectl expose deployment nginx --port=80 --target-port=80 --dry-run -o yaml"
+
+And getting the yaml from an existing deployment;
+"kubectl get deployment -n default nginx -o yaml"
+
+I also like the --export, because it removes a bunch of stuff from the existing deployment which you might not need if you just want the plain yaml. But it's deprecated and being removed in newer versions. However, it works great right now and I recommend trying it out.
+
+"kubectl get deployment -n default nginx -o yaml --export"
+
+"kubectl get deployment -n default nginx -o yaml --export > nginx-deployment.yaml"
