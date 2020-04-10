@@ -34,3 +34,6 @@ kubectl exec -it test-23094832904
 
 ## inside the container do this to test
 curl localhost:8001/api/v1/namespaces/default/services
+
+## edit rolebinding
+kubectl edit rolebinding test 
