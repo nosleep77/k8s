@@ -85,3 +85,6 @@ k replace -f replicast.yaml
 k scale --replicas=6 -f replicaset.yaml
 k scale --replicas=6 replicaset rs-app
 
+
+## refresh / restart deployment pods with new changes
+kubectl rollout restart deployment yourDeploymentName
