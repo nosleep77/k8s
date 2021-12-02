@@ -76,3 +76,12 @@ https://github.com/DickChesterwood/k8s-fleetman
 Generate YAML file from kubectl
 https://www.reddit.com/r/kubernetes/comments/eu97sn/yaml_generator/
 
+
+Replicaset commands
+k create -f replicaset.yaml
+k get replicaset
+k delete replicaset myapp-rpl
+k replace -f replicast.yaml
+k scale --replicas=6 -f replicaset.yaml
+k scale --replicas=6 replicaset rs-app
+
