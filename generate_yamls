@@ -2,6 +2,9 @@
 Generate YAML file from kubectl
 https://www.reddit.com/r/kubernetes/comments/eu97sn/yaml_generator/
 
+## generate pod yaml with service
+kubectl run nginx --image nginx --port 80 --expose --dry-run -o yaml
+
 ## generate deployment yaml
 kubectl create deployment nginx --image=nginx --dry-run -o yaml
 
