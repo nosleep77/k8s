@@ -88,3 +88,8 @@ k scale --replicas=6 replicaset rs-app
 
 ## refresh / restart deployment pods with new changes
 kubectl rollout restart deployment yourDeploymentName
+
+
+## oc adm commands
+oc adm policy add-scc-to-user <scc type> -z <name of service account>
+oc adm policy add-scc-to-user nonroot -z default
