@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: nginx
   name: nginx
@@ -10,15 +9,20 @@ spec:
   selector:
     matchLabels:
       app: nginx
-  strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: nginx
     spec:
+      # Configure a topology spread constraint
+      topologySpreadConstraints:
+      - maxSkew: 1
+        #minDomains: <integer> # optional; alpha since v1.24
+        topologyKey: zone
+        whenUnsatisfiable: DoNotSchedule
+        labelSelector:
+          matchLabels:
+            app: nginx
       containers:
       - image: nginx
         name: nginx
-        resources: {}
-status: {}
