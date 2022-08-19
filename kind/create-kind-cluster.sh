@@ -1,1 +1,1 @@
-kind create cluster --name promtest --config kind-config.yaml
+kind create cluster --name spreadtopology --config kind-config.yaml
