@@ -1,10 +1,11 @@
 alias k=kubectl
+complete -o default -F __start_kubectl k
+
 alias getcontext='kubectl config get-contexts'
 #alias getns='kubectl get sa -o=jsonpath='{.items[0]..metadata.namespace}'' ; echo -e "\n"
 export chns='kubectl config set-context --current --namespace'
 export do='--dry-run=client -o yaml'
 export now='--force --grace-period=0'
-complete -F __start_kubectl k
 source <(helm completion bash)
 
 alias getcontext='f() { [ "$1" ] && kubectl config use-context $1 || kubectl config current-context ; } ; f'
