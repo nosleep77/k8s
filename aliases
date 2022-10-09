@@ -2,12 +2,12 @@ source <(kubectl completion bash)
 alias k=kubectl
 complete -o default -F __start_kubectl k
 
-#alias getcontext='kubectl config get-contexts'
+alias getcontext='kubectl config get-contexts'
 #alias getns='kubectl get sa -o=jsonpath='{.items[0]..metadata.namespace}'' ; echo -e "\n"
 export chns='kubectl config set-context --current --namespace'
 export do='--dry-run=client -o yaml'
 export now='--force --grace-period=0'
 source <(helm completion bash)
 
-alias getcontext='f() { [ "$1" ] && kubectl config use-context $1 || kubectl config current-context ; } ; f'
+#alias getcontext='f() { [ "$1" ] && kubectl config use-context $1 || kubectl config current-context ; } ; f'
 alias getns='f() { [ "$1" ] && kubectl config set-context --current --namespace $1 || kubectl config view --minify | grep namespace | cut -d" " -f6 ; } ; f'
