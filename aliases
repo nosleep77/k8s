@@ -1,7 +1,8 @@
+source <(kubectl completion bash)
 alias k=kubectl
 complete -o default -F __start_kubectl k
 
-alias getcontext='kubectl config get-contexts'
+#alias getcontext='kubectl config get-contexts'
 #alias getns='kubectl get sa -o=jsonpath='{.items[0]..metadata.namespace}'' ; echo -e "\n"
 export chns='kubectl config set-context --current --namespace'
 export do='--dry-run=client -o yaml'
