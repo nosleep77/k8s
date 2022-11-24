@@ -1,2 +1,4 @@
 
 data_source_name as follows: postgresql://<user1>:<user1>@<ip_addr1>:5432/?sslmode=disable,postgresql://<user2>:<user2>@<ip_addr2>:5432/?sslmode=disable
+
+postgresql://postgres:<Password>@pg1-postgresql:5432/postgres?sslmode=disable,postgresql://postgres:<Password>@pg2-postgresql:5432/postgres?sslmode=disable
