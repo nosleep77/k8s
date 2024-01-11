@@ -1,0 +1,6 @@
+- pod disruption budget
+- topology spread
+- requests and limits
+- network and egress network policies
+- readiness and liveness probes
+- horizontal pod autoscaling
