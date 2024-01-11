@@ -4,3 +4,5 @@
 - network and egress network policies
 - readiness and liveness probes
 - horizontal pod autoscaling
+- no latest tag for container image
+- nonroot containers
